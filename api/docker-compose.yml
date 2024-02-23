@@ -19,6 +19,6 @@ services:
         required: false
 
     volumes:
-      - fastapi_data:/
+      - fastapi_data:/api
 
 
