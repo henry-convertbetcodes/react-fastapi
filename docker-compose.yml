@@ -19,7 +19,7 @@ services:
         required: false
 
     volumes:
-      - fastapi_data:./api
+      - fastapi_data:/api
 
   fe:
     container_name: reactapp
