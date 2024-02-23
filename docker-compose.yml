@@ -13,9 +13,9 @@ services:
     ports:
       - 8000:8000
     env_file:
-      - path: ./.env
+      - path: ./api/.env
         required: true
-      - path: ./.env.local
+      - path: ./api/.env.local
         required: false
 
     volumes:
@@ -29,9 +29,9 @@ services:
     ports:
       - 3000:3000
     env_file:
-      - path: ./.env
+      - path: ./fe/.env
         required: true
-      - path: ./.env.local
+      - path: ./fe/.env.local
         required: false
     depends_on:
       - api
